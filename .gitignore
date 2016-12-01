@@ -19,3 +19,6 @@ gradlew.bat
 
 app/libs/
 app/src/main/res/drawable/
+app/src/androidTest/java/com/example/administrator/myapplication/ExampleInstrumentedTest.java
+app/src/test/java/com/example/administrator/myapplication/ExampleUnitTest.java
+
