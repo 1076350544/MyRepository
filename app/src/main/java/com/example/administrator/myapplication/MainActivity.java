@@ -1,14 +1,12 @@
 package com.example.administrator.myapplication;
 
-import android.support.v7.app.ActionBar;
+import android.annotation.SuppressLint;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
-import android.util.Log;
 import android.view.MotionEvent;
 import android.view.View;
 import android.widget.Button;
 import android.widget.LinearLayout;
-import android.widget.TextView;
 import android.widget.Toast;
 
 public class MainActivity extends AppCompatActivity {
@@ -16,6 +14,7 @@ public class MainActivity extends AppCompatActivity {
     LinearLayout layout;
 
     boolean first = true;
+	@SuppressLint("SetTextI18n")
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -47,9 +46,9 @@ public class MainActivity extends AppCompatActivity {
             public void onScrollChange(View view, int i, int i1, int i2, int i3) {
                 if(first){
                     int pLeft = layout.getPaddingLeft();
-                    int pTop = layout.getPaddingTop();
+					int pTop;
                     int pRight = layout.getPaddingRight();
-                    int pBottom = layout.getPaddingBottom();
+					int pBottom;
                     t2.setHeight(layout.getHeight() / 5);
                     pBottom = - layout.getHeight() / 5;
 
